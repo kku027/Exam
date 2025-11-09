@@ -14,7 +14,7 @@ print("Размер датасета:", data.shape)
 print("\nПервые 5 строк:")
 print(data.head())
 
-# Проверка на дубликаты и пропуски
+
 print("Пропуски в данных:")
 print(data.isnull().sum())
 print(f"\nДубликаты: {data.duplicated().sum()}")
@@ -36,7 +36,7 @@ data['Mileage_Category'] = pd.cut(data['Mileage'],
 
 print("Новые признаки созданы")
 
-# Визуализация распределения цен
+
 plt.figure(figsize=(15, 10))
 
 plt.subplot(2, 3, 1)
@@ -188,7 +188,6 @@ plt.ylabel('Количество автомобилей')
 plt.tight_layout()
 plt.show()
 
-# Анализ премиум сегмента
 premium_threshold = data['Price'].quantile(0.8)
 premium_cars = data[data['Price'] >= premium_threshold]
 
