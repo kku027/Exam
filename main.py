@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 
 warnings.filterwarnings('ignore')
 
-data = pd.read_csv('H:/Учёба/Финансовый университет/car_price_prediction_.csv')
+data = pd.read_csv('car_price_prediction_.csv')
 print("Размер датасета:", data.shape)
 print("\nПервые 5 строк:")
 print(data.head())
